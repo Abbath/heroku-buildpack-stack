@@ -118,4 +118,6 @@ speak "Caching .stack-work"
 rsync -avq "$WORK_DIR/.stack-work/" "$SANDBOX_DIR"
 cp -Rp "$WORK_DIR/.stack-work" "$BUILD_DIR"
 
+cp -r "$BUILD_DIR/posts" "$WORK_DIR" 
+
 speak "Finished!"
